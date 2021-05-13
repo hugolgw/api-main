@@ -1,0 +1,23 @@
+{
+    "name": "api-init",
+    "version": "1.0.8",
+    "description": "Web engineering project API initialization",
+    "bin": "lib/bin.js",
+    "main": "lib/index.js",
+    "files": [
+        "api",
+        "lib"
+    ],
+    "keywords": [
+        "api",
+        "api-init"
+    ],
+    "author": "hugolgw <hugolgw@126.com>",
+    "license": "MIT",
+    "devDependencies": {
+        "@tsconfig/node10": "^1.0.7",
+        "@types/jest": "^26.0.22",
+        "@types/node": "^14.14.37",
+        "@typicode/eslint-config": "^0.1.2"
+    }
+}

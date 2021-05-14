@@ -1,6 +1,6 @@
 {
     "name": "api-init",
-    "version": "1.0.8",
+    "version": "1.0.9",
     "description": "Web engineering project API initialization",
     "bin": "lib/bin.js",
     "main": "lib/index.js",

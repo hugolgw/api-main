@@ -10,6 +10,7 @@ npx api-init install
 
 # Project API default structure
 
+```ssh
 ├──src
     ├──api                      
         ├──modules               #模块划分和后端接口保持一致
@@ -20,6 +21,7 @@ npx api-init install
             └── index.js        #封装公共请求方法
         └── index.js            #自动生成接口方法  
     ├── ...       
+```
 
 ## License
 

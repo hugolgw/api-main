@@ -13,6 +13,7 @@
         "api-init"
     ],
     "author": "hugolgw <hugolgw@126.com>",
+    "repository": "github:hugolgw/api-main",
     "license": "MIT",
     "devDependencies": {
         "@tsconfig/node10": "^1.0.7",

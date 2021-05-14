@@ -2,7 +2,7 @@
 
 # Usage
 
-Int web project api
+Init web project api
 
 ```ssh
 npx api-init install

@@ -1,6 +1,6 @@
 {
     "name": "api-init",
-    "version": "1.0.9",
+    "version": "1.1.1",
     "description": "Web engineering project API initialization",
     "bin": "lib/bin.js",
     "main": "lib/index.js",
@@ -19,7 +19,8 @@
         "@tsconfig/node10": "^1.0.7",
         "@types/jest": "^26.0.22",
         "@types/node": "^14.14.37",
-        "@typicode/eslint-config": "^0.1.2"
+        "@typicode/eslint-config": "^0.1.2",
+        "webpack": "^5.37.0"
     },
     "dependencies": {
         "axios": "^0.21.1"

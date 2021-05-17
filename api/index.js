@@ -13,7 +13,7 @@ const api = requireApi.keys().reduce((result, path)=> {
                 const method = request[cur.method]
                 return method({...cur.params, ...params}, id)
             },
-            [cur.name + 'decs']: cur.decs
+            [cur.name + '_decs']: cur.decs
         }
 
     }, {})

@@ -5,22 +5,31 @@
 Init web project api
 
 ```ssh
-npx api-init install
+npx api-init install [dir] (default: src/api)
+```
+
+Interface documentation
+
+```ssh
+npx api-init docs [dir] (default: src/api)
 ```
 
 # Project API default structure
 
 ```ssh
-├──src
-    ├──api                      
-        ├──modules               #模块划分和后端接口保持一致
-            ├── example.js       #接口模块配置    
+├── src
+    ├── api
+        ├── docs
+            └── index.js         #生成接口文档明显
+        ├── modules
+            ├── example.js       #接口模块配置
             └── ...
-        ├──request               
+        ├── request
             ├── config.js       #公共请求方法配置
             └── index.js        #封装公共请求方法
-        └── index.js            #自动生成接口方法  
-    ├── ...       
+        ├── docs.json           #接口文档
+        └── index.js            #自动生成接口方法
+    ├── ...
 ```
 
 ## License

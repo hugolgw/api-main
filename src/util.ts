@@ -47,9 +47,9 @@ export const init=(dir = 'src/api'):void => {
   copy(path.join(__dirname, '../api'), dir)
 }
 
-export const decs = (dir = 'src/api') => {
+export const docs = (dir = 'src/api') => {
 
-  const dirname:string = path.resolve(process.cwd(), dir)
+  const dirname:string = path.resolve(process.cwd(), dir + '/docs')
 
   webpack({
     mode: 'production',
@@ -65,7 +65,7 @@ export const decs = (dir = 'src/api') => {
 
       const apiStr = JSON.stringify(api.default, null, "\t")
 
-      fs.writeFile(dirname + '/decs.json', apiStr, (error: any) => {
+      fs.writeFile(dirname + '/docs.json', apiStr, (error: any) => {
           if (error) return console.log("生成文档失败,原因是" + error.message)
           fs.unlinkSync(dirname + '/api_build.js')
       })

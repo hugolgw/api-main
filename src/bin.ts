@@ -1,13 +1,13 @@
 #!/usr/bin/env node
 
-import { init, decs } from './util'
+import { init, docs } from './util'
 
 const [ , , cmd, ...args] = process.argv
 
 function help() {
   console.log(`Usage
     api-init install [dir] (default: src/api)
-    api-init decs [dir] (default: src/api)
+    api-init docs [dir] (default: src/api)
   `)
 }
 
@@ -22,8 +22,8 @@ const cmds :{
   install(dir:string):void {
     args.length > 1 ? misuse() : init(dir)
   },
-  decs(dir:string):void {
-    args.length > 1 ? misuse() : decs(dir)
+  docs(dir:string):void {
+    args.length > 1 ? misuse() : docs(dir)
   },
 }
 

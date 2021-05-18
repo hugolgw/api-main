@@ -16,7 +16,7 @@ const api = requireApi.keys().reduce((result, path) => {
                     ...params
                 }, id)
             },
-            [cur.name + '_decs']: cur.decs
+            [cur.name + '_docs']: cur.docs
         }
 
     }, {})

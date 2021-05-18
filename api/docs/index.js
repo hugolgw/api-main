@@ -7,8 +7,10 @@ const apiDocs = requireApi.keys().reduce((result, path) => {
     const moduleApi = moduleContent.reduce((pre, cur) => {
         return {
             ...pre,
-            [cur.name]: `${moduleName}.${cur.name}`,
-            [cur.name + '_decs']: cur.decs
+            [cur.name]: {
+                name: `${moduleName}.${cur.name}`,
+                docs: cur.docs
+            }
         }
 
     }, {})

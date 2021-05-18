@@ -63,6 +63,10 @@ npm run api-init docs [dir] (default: src/api)
     ├── ...
 ```
 
+## 文档
+
+https://hugolgw.github.io/api-main
+
 # License
 
 MIT

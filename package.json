@@ -1,6 +1,6 @@
 {
     "name": "api-init",
-    "version": "1.1.4",
+    "version": "1.1.6",
     "description": "Web engineering project API initialization",
     "bin": "lib/bin.js",
     "main": "lib/index.js",
@@ -16,6 +16,7 @@
         "api-init"
     ],
     "author": "hugolgw <hugolgw@126.com>",
+    "homepage": "https://hugolgw.github.io/api-main",
     "repository": "github:hugolgw/api-main",
     "license": "MIT",
     "devDependencies": {

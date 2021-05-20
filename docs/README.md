@@ -144,7 +144,7 @@ https://www.npmjs.com/package/api-init
 api-init 源码地址：
 https://github.com/hugolgw/api-main
 
-**原创不易，欢迎 sart**
+**原创不易，欢迎 star**
 
 # License
 

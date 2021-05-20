@@ -11,7 +11,7 @@ const api = requireApi.keys().reduce((result, path) => {
             ...pre,
             [cur.name]: function (params = {}, id) {
                 const method = request[cur.method]
-                return method({
+                return method(cur.url, {
                     ...cur.params,
                     ...params
                 }, id)

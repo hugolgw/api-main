@@ -2,13 +2,19 @@
 
 ## 自动
 
-初始化项目 API
+1. 安装 `api-init`
+
+```shell
+npm install api-init --save-dev
+```
+
+2. 项目 API 初始化命令
 
 ```shell
 npx api-init install [dir] (default: src/api)
 ```
 
-生成接口文档
+3. 接口文档生成命令
 
 ```shell
 npx api-init docs [dir] (default: src/api)

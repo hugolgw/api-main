@@ -60,13 +60,17 @@ export const docs = (dir = 'src/api') => {
         libraryTarget: 'commonjs2'
     }
   }, (err:any, stats:any) => {
-      if (err || stats.hasErrors()) return
+      if (err || stats.hasErrors()) {
+        console.log('***文档路径需接口api路径相同***')
+        return
+      }
       const api = require(dirname + '/api_build.js')
 
       const apiStr = JSON.stringify(api.default, null, "\t")
 
       fs.writeFile(dirname + '/docs.json', apiStr, (error: any) => {
           if (error) return console.log("生成文档失败,原因是" + error.message)
+          console.log('***文档生成成功***')
           fs.unlinkSync(dirname + '/api_build.js')
       })
   })
